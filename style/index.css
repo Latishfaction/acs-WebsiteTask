@@ -220,7 +220,8 @@ svg{
 #timeline{
     position: relative;
     height: 100vh;
-    /* border: 2px solid greenyellow; */
+    border: 2px solid greenyellow;
+    overflow: hidden;
 }
 #timeline-title{
     font-family: 'BUTTERSHINE SERIF';
@@ -316,6 +317,55 @@ img[alt="party"]{
     top: 63px;
     z-index: 1;
     right: 6%;
+}
+
+#timeline-title-frekle1{
+    position: absolute;
+    left: 0px;
+}
+#timeline-title-frekle2{
+    position: absolute;
+    left: 104px;
+    top: 40px;
+}
+#timeline-title-frekle3{
+    position: absolute;
+    left: 250px;
+    top: 7px;
+}
+#timeline-title-frekle4{
+
+    position: absolute;
+    left: 420px;
+    top: 11px;
+
+}
+
+#timeline-top-left-flower{
+    position: absolute;
+    left: -26px;
+    top: -143px;
+}
+#timeline-top-right-flower{
+    position: absolute;
+    right: 0px;
+    top: -39px;
+    width: 13%;
+}
+#timeline-top-right-frekle{
+    position: absolute;
+    right: -3px;
+    top: 3px;
+}
+#timeline-bottom-right-frekle{
+    position: absolute;
+    right: 10px;
+    bottom: -12px;
+}
+#timeline-bottom-right-leaf{
+    position: absolute;
+    bottom: -30px;
+    right: -3px;
 }
 /* ***************************************************** */
 /* Gallery */
