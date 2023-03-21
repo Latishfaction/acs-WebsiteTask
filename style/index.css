@@ -220,7 +220,7 @@ svg{
 #timeline{
     position: relative;
     height: 100vh;
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
     overflow: hidden;
 }
 #timeline-title{
