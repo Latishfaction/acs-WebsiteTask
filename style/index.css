@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&display=swap');
+@font-face {
+    font-family: 'Mecknight 400';
+    src: url("../fonts/Mecknight 400.otf") format('opentype');
+}
+@font-face {
+    font-family: 'Zeviero 400';
+    src: url("../fonts/Zeviero 400.otf") format('opentype');
+}
+@font-face {
+    font-family: 'BUTTERSHINE SERIF';
+    src: url("../fonts/BUTTERSHINE SERIF.otf") format('opentype');
+}
+*,body{
+    margin: 0px;
+    padding: 0px;
+}
+/* ********************************************************* */
+/* FRONTPAGE */
+#logo{
+    width: 62px;
+    height: 62px;
+}
+header{
+    display: flex;
+    position: absolute;
+    /* margin: 20px 0px; */
+    margin: 30px 20px;
+}
+#navbar{
+    /* border: 2px solid red;    */
+    margin: 0px auto;
+    
+}
+#navbar ul>li{
+    display: inline-block;
+    /* border: 2px solid red; */
+    font-family: 'Belgrano', serif;
+    margin: 20px 50px;
+    color: #214F42;
+    font-size: 1.2em;
+}
+#navbar ul>li:first-child{
+    margin-left: 170px;
+}
+#navbar ul>li:last-child{
+    margin-right: 100px;
+}
+#front-page{
+    /* border: 2px solid deeppink; */
+    position: relative;
+    /* display: block; */
+    height: 100vh;
+    /* width: 100vw; */
+}
+#front-page-content{
+    overflow: hidden;
+    position: absolute;
+    background-color: rebeccapurple;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    z-index: -1;
+}
+#overlay{
+    background-color: #214F42;
+    opacity: 0.3;
+    mix-blend-mode: color-dodge;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+#bg-img{
+    background-image: url("../images/Frontpage/bg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+}
+#blocker{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 123px;
+    height: 30px;
+    background-color: #0d0f0f;
+}
+#front-page-text-container{
+    /* border: 1px solid #fff; */
+    height: 410px;
+    width: 500px;
+    padding: 10px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    z-index: 2;
+    transform: rotate(-1.50deg);
+}
+.title-flower{
+    width: 160px;
+    position: absolute;
+    left: 35%;
+}
+#text{
+    font-family: 'Mecknight 400','sans-serif';
+    color: #DFC69D;
+}
+#groom-text{
+    /* border: 1px solid pink; */
+    font-size: 4.5rem;
+    position: absolute;
+    top: 9%;
+    left: 8%;
+
+}
+#bride-text{
+    /* border: 1px solid pink; */
+    font-size: 4.5rem;
+    position: absolute;
+    bottom: 50%;
+    right: 9%;
+
+}
+img[alt="and"]{
+    width: 6%;
+    position: absolute;
+    left: 50%;
+    top: 23%;
+}
+#wedding-info{
+    font-family: 'Belgrano', serif;
+    text-transform: uppercase;
+    /* border: 2px dotted salmon; */
+    width: 75%;
+    position: absolute;
+    bottom: 9%;
+    line-height: 40px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    font-size: 1.1rem;
+    left: 10%;
+}
+svg{
+    fill: #DFC69D;
+    width: 25px;
+    height: 25px;
+}
+.info-details{
+    padding :5px 15px;
+    /* border: 1px solid dodgerblue; */
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+/* ********************************************************* */
+/* Black floral design background */
+.design-bg{
+    height: 100vh;
+    position: relative;
+    /* width: 100vw; */
+    background-color: #14191F;
+    background-image: url('../images/OurStory/BACKGROUND.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ******************************************************** */
+/* OUR STORY */
+
+#our-story-title{
+    font-family: 'BUTTERSHINE SERIF';
+    color: #DFC69D;
+    font-size: 5.8rem;
+    margin-left: 45px;
+    position: absolute;
+    top: 10%;
+    left: 2%;
+}
+#our-story-content{
+    /* border: 2px dotted red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding: 30px;
+    position: absolute;
+    bottom: 10%;
+}
+#our-story-content p{
+    font-family: 'Belgrano', serif;
+    color: #BCC6AE;
+    font-size: 1.5rem;
+    /* border: 1px solid dodgerblue; */
+    width: 48%;
+    text-align: justify;
+    word-spacing: 5px;
+    /* margin-left: 10px; */
+    /* margin-top: 20px; */
+    letter-spacing: 3px;
+    line-height: 33px;
+}
+#our-story-content>img{
+    width: 500px;
+        /* border: 1px solid dodgerblue; */
+}
+
+/* ***************************************************** */
+/* TIMELINE */
+#timeline{
+    position: relative;
+    height: 100vh;
+    /* border: 2px solid greenyellow; */
+}
+#timeline-title{
+    font-family: 'BUTTERSHINE SERIF';
+    color: #DFC69D;
+    font-size: 5.8rem;
+    letter-spacing: 5px;
+    margin-left: 45px;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+#timeline-scale{
+    /* border: 2px solid royalblue; */
+    position: absolute;
+    width: 98vw;
+    height: 70vh;
+    bottom: 10%;
+}
+#timeline-scale-main img{
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    bottom: 40%;
+    z-index: 2;
+}
+.timeline-scale-stickers{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.timeline-events{
+    width: 85%;
+    padding: 5px;
+    margin-top: 10px;
+}
+.timeline-event-title{
+    color: #DFC69D;
+    font-family: "Zeviero 400";
+    font-size: 1.8rem;
+}
+.timeline-event-time{
+    color: #DFC69D;
+    font-family: 'Belgrano', serif;
+    margin-bottom: 10px;
+}
+.up-stick{
+    transform: rotate(180deg);
+}
+#timeline-scale-stick1{
+    position: absolute;
+    /* border: 2px solid darkcyan; */
+    left: 5%;
+    bottom: -6px;
+    z-index: 1;
+}
+
+#timeline-scale-stick2{
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    left: 20%;
+}
+#timeline-scale-stick3{
+    position: absolute;
+    bottom: -8px;
+    z-index: 1;
+    left: 35%;
+}
+img[alt="cutting-cake"]{
+    width: 62%;
+    margin: 0px;
+}
+#timeline-scale-stick4{
+    position: absolute;
+    top: 78px;
+    z-index: 1;
+    left: 50%;
+}
+#timeline-scale-stick5{
+    position: absolute;
+    bottom: -6px;
+    z-index: 1;
+    right: 17%;
+}
+img[alt="party"]{
+    width: 73%;
+}
+#timeline-scale-stick6{
+    position: absolute;
+    top: 63px;
+    z-index: 1;
+    right: 6%;
+}
+/* ***************************************************** */
+/* Gallery */
+/* ***************************************************** */
+#gallery{
+    position: relative;
+    height: 100vh;
+}
+#gallery-title{
+    font-family: 'BUTTERSHINE SERIF';
+    color: #DFC69D;
+    font-size: 5.8rem;
+    letter-spacing: 5px;
+    margin-left: 45px;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+#gallery-photos-container{
+    /* border: 1px solid #fff; */
+    position: absolute;
+    width: 90vw;
+    height: 75vh;
+    bottom: 70px;
+    left: 80px;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.photo{
+    border: 2px solid #DFC69D;
+    width: 230px;
+    height: 300px;
+    margin: 18px;
+    margin-bottom: 0px;
+}
+#img1{
+    background-image: url("../images/Gallery/photos/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#img2{
+    background-image: url("../images/Gallery/photos/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#img3{
+    background-image: url("../images/Gallery/photos/3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#img4{
+    background-image: url("../images/Gallery/photos/4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#img5{
+    background-image: url("../images/Gallery/photos/5.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#img6{
+    background-image: url("../images/Gallery/photos/6.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#img7{
+    background-image: url("../images/Gallery/photos/7.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#add-img-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+#add-img-container>span{
+    /* border: 2px solid red; */
+    text-align: center;
+    font-family: 'BUTTERSHINE SERIF';
+    color: #DFC69D;
+    font-size: 1.7rem;
+    text-align: center;
+    word-spacing: 5px;
+    margin: 10px 0px;
+}
+#add-logo svg{
+    width: 100px;
+    height: 55px;
+}
+
+/* ***************************************************** */
+/* Registry */
+/* ***************************************************** */
+#registry{
+    position: relative;
+    height: 100vh;
+
+}
+#registry-title{
+    font-family: 'BUTTERSHINE SERIF';
+    color: #DFC69D;
+    font-size: 5.8rem;
+    letter-spacing: 5px;
+    margin-left: 45px;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+#registry-rose-title{
+    position: absolute;
+    top: -15px;
+    rotate: 348deg;
+    width: 15%;
+}
+#registry-title-frekle1{
+    position: absolute;
+    left: 5%;
+    top: 3%;
+}
+#registry-title-frekle2{
+    position: absolute;
+    left: 28%;
+    top: 5%;
+}
+.registry-right-cliparts{
+    width: 98vw;
+    height: 30%;
+    overflow: hidden;
+    position: relative;
+}
+#registry-title-frekle-right{
+    position: absolute;
+    right: 10px;
+    top: 2px;
+}
+#registry-title-rose-right{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    width: 75px;
+    rotate: 250deg;
+    z-index: 2;
+    /* border: 2px solid red; */
+    overflow-x: hidden;
+}
+#registry-title-leaf-right{
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    z-index: 1;
+    width: 12%;
+    rotate: 21deg;
+    overflow-x: hidden;
+
+}
+#registry-title-frekle-left-bottom{
+    position: absolute;
+    bottom: 15px;
+    left: -10px;
+    rotate: 70deg;
+}
+#registry-title-flower-left-bottom{
+    position: absolute;
+    bottom: 2px;
+    left: 5px;  
+    width: 8%;
+}
+#registry-title-flower-bottom-right{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 15%;
+}
+#form-container{
+    /* border: 1px solid #fff; */
+    position: absolute;
+    width: 90vw;
+    height: 75vh;
+    bottom: 70px;
+    left: 80px;
+}
+form{
+    /* border: 2px solid red; */
+    position: relative;
+    left: 15%;
+    width: 70%;
+    height: 100%;
+}
+#form-container form div{
+    position: relative;
+    /* border: 2px solid red; */
+    margin: 40px 10px;
+    padding: 5px;
+    color: #BCC6AE;
+    font-family: 'Belgrano', serif;
+    font-size: 1.6rem;    
+}
+
+#form-container form div>label{
+    /* border: 2px solid blue; */
+
+}
+.form-input{
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 0px;
+    padding: 10px;
+    font-size: 1.3rem;
+    background-color: #214F42;
+    color: #fff;
+    font-family: 'Belgrano', serif;
+    width: 400px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    outline: none;
+    border-radius: 5px;
+}
+input{
+    border: none;
+}
+.border-none{
+    background-color: transparent;
+    color: #BCC6AE;
+}
+
+/* #form-container form div>input{
+} */
+.form-choice{
+        /* border: 2px solid red; */
+        margin-right: 60px;
+        padding: 2px;
+}
+#registry-button{
+    border: 2px solid #214F42;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px 50px;
+    margin: 60px 10px;
+    font-family: 'Belgrano', serif;
+    color: #DFC69D;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 40%;
+}
+#registry-button:hover{
+    background-color: #214F42;
+    cursor: pointer;
+}
+/*
+*********************************************************
+RSVP
+******************************************************
+*/
+#rsvp{
+    position: relative;
+    height: 100vh;
+    background-color: #14191F;
+}
+#rsvp-title{
+    font-family: 'BUTTERSHINE SERIF';
+    color: #DFC69D;
+    font-size: 5rem;
+    position: absolute;
+    top: 6%;
+    left: 40%;
+    z-index: 4;
+}
+#rsvp-title-flower-top{
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    left: 42%;
+}
+#rsvp-title-flower-bottom{
+    padding: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 42%;
+}
+img[alt="rsvp-flower"]{
+    width: 12%;
+    z-index: 1;
+}
+#rsvp-flowerclipart-container-left{
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 240px;
+    top: 3px;
+}
+#rsvp-flowerclipart-container-right{
+    /* border: 2px solid red; */
+    position: absolute;
+    right: 285px;
+    top: 3px;
+}
+.rsvp-green-leaves-left{
+    /* border: 1px solid rebeccapurple; */
+    position: relative;
+    left: 130px;
+    top: 5px;
+    width: 55%;
+}
+.rsvp-rose-left{
+    width: 32%;
+    position: relative;
+    left: 31px;
+}
+
+.rsvp-green-leaves-right{
+    width: 55%;
+    rotate: 85deg;
+    position: relative;
+    right: 15px;
+    top: 10px;
+}
+.rsvp-rose-right{
+    width: 32%;
+    rotate: 76deg;
+    position: relative;
+    top: 10px;
+    right: 145px;
+}
+
+#rsvp-text-container{
+    color: #BCC6AE;
+    /* border: 2px solid red; */
+    font-family: 'Belgrano', serif;
+    line-height: 48px;
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 2.5px;
+    word-spacing: 2px;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+#rsvp-bg-img{
+    position: absolute;
+    bottom: 8%;
+    left: 30%;
+    width: 40%;
+    height: 65%;
+    background-image: url(../images/rsvp/tumblr_ot95fxV9kc1rlnjw2o1_1280.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: lighten;
+}
+#rsvp-bg-overlay{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+
+    background-image: url("../images/rsvp/AssuredAstonishingCanary-size_restricted.gif");
+    background-repeat: repeat;
+    background-size: 400px;
+    mix-blend-mode: screen;
+    opacity: 0.8;
+}
