@@ -220,7 +220,7 @@ svg{
 #timeline{
     position: relative;
     height: 100vh;
-    /* border: 2px solid greenyellow; */
+
     overflow: hidden;
 }
 #timeline-title{
@@ -373,6 +373,7 @@ img[alt="party"]{
 #gallery{
     position: relative;
     height: 100vh;
+    /* border: 2px solid greenyellow; */
 }
 #gallery-title{
     font-family: 'BUTTERSHINE SERIF';
@@ -387,21 +388,20 @@ img[alt="party"]{
 #gallery-photos-container{
     /* border: 1px solid #fff; */
     position: absolute;
-    width: 90vw;
-    height: 75vh;
-    bottom: 70px;
+    width: 83vw;
+    height: 65vh;
+    bottom: 106px;
     left: 80px;
-    overflow: auto;
 
+    overflow: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 .photo{
     border: 2px solid #DFC69D;
-    width: 230px;
-    height: 300px;
+    width: 215px;
+    height: 250px;
     margin: 18px;
     margin-bottom: 0px;
 }
@@ -468,7 +468,108 @@ img[alt="party"]{
     width: 100px;
     height: 55px;
 }
-
+#gallery-top-frekle{
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+#gallery-top-butterfly{
+    position: absolute;
+    top: 46px;
+    left: 393px;
+    width: 8%;
+    rotate: 59deg;
+}
+#container-Topleft-GreenLeaves{
+    position: absolute;
+    left: 59px;
+    top: 127px;
+    width: 14%;
+    rotate: 8deg;
+    z-index: 1;
+}
+#container-bottomLeft-GreenLeaves{
+    position: absolute;
+    right: 119px;
+    bottom: 43px;
+    width: 14%;
+    rotate: 180deg;
+    z-index: 1;
+}
+#gallery-bettle{
+    position: absolute;
+    left: 302px;
+    top: 215px;
+    z-index: 1;
+    width: 2%;
+    rotate: 73deg;
+}
+#gallery-redrose{
+    position: absolute;
+    left: 338px;
+    top: 197px;
+    width: 5%;
+    rotate: 60deg;
+    z-index: 1;
+}
+#gallery-redrse{
+    position: absolute;
+    right: 140px;
+    top: 187px;
+    z-index: 1;
+    width: 5%;
+    rotate: 246deg;
+}
+#gallery-honeybee{
+    width: 2.5%;
+    position: absolute;
+    right: 155px;
+    top: 160px;
+    z-index: 1;
+}
+#gallery-frekle{
+    position: absolute;
+    right: 80px;
+    top: 135px;
+    width: 13%;
+}
+#gallery-whiterose{
+    position: absolute;
+    bottom: 38%;
+    left: 276px;
+    rotate: -10deg;
+    z-index: 1;
+    width: 5%;
+}
+#gallery-pinkrose{
+    position: absolute;
+    bottom: 38%;
+    right: 620px;
+    rotate: 6deg;
+    z-index: 1;
+    width: 4.5%;
+}
+#gallery-ladybug{
+    position: absolute;
+    bottom: 42%;
+    right: 50%;
+    rotate: 359deg;
+    z-index: 1;
+    width: 2%;
+}
+#gallery-container-flower-bottom{
+    position: absolute;
+    bottom: -11px;
+    width: 80px;
+    left: 2px;
+    rotate: 23deg;
+    transform: scaleX(-1);
+}
+#gallery-container-frekles-bottom{
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
 /* ***************************************************** */
 /* Registry */
 /* ***************************************************** */
