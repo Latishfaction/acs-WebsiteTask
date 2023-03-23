@@ -177,7 +177,11 @@ svg{
 
 /* ******************************************************** */
 /* OUR STORY */
-
+#our-story{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
 #our-story-title{
     font-family: 'BUTTERSHINE SERIF';
     color: #DFC69D;
@@ -215,6 +219,24 @@ svg{
         /* border: 1px solid dodgerblue; */
 }
 
+#top-left-leaf{
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    width: 15%;
+}
+#top-right-leaf{
+    position: absolute;
+    right: -23px;
+    top: 0px;
+    width: 15%;
+}
+#bottom-left-flower{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 10%;
+}
 /* ***************************************************** */
 /* TIMELINE */
 #timeline{
