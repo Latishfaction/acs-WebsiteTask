@@ -223,18 +223,15 @@ svg{
     letter-spacing: 3px;
     line-height: 33px;
 }
-#our-story-content>img{
+#couple-img{
     width: 500px;
-        /* border: 1px solid dodgerblue; */
 }
 
 #top-left-leaf{
     position: absolute;
-    animation-name: our-story-animation;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
-    animation-play-state: paused;
-    /* animation-iteration-count: infinite; */
+    width: 15%;
+    left: 0px;
+    top: 25px;
 }
 #top-right-leaf{
     position: absolute;
@@ -249,18 +246,6 @@ svg{
     width: 10%;
 }
 
-@keyframes our-story-animation{
-    from{
-        width: 0%;
-        left: 0px;
-        top: 0px;
-    }
-    to{
-        width: 15%;
-        left: 0px;
-        top: 25px;
-    }
-}
 /* ***************************************************** */
 /* TIMELINE */
 #timeline{
