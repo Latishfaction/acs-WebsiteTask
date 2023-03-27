@@ -14,6 +14,7 @@
 *,body{
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 /* ********************************************************* */
 /* FRONTPAGE */
@@ -30,15 +31,22 @@ header{
 #navbar{
     /* border: 2px solid red;    */
     margin: 0px auto;
+    float: right;
     
 }
 #navbar ul>li{
     display: inline-block;
+    text-decoration: none;
+}
+#navbar ul>li>a{
     /* border: 2px solid red; */
     font-family: 'Belgrano', serif;
-    margin: 20px 50px;
+    margin: 20px 20px;
+    padding: 0px 25px;
     color: #214F42;
     font-size: 1.2em;
+    text-decoration: none;
+
 }
 #navbar ul>li:first-child{
     margin-left: 170px;
@@ -177,6 +185,7 @@ svg{
 
 /* ******************************************************** */
 /* OUR STORY */
+
 #our-story{
     position: relative;
     height: 100vh;
@@ -221,9 +230,11 @@ svg{
 
 #top-left-leaf{
     position: absolute;
-    left: 0px;
-    top: 25px;
-    width: 15%;
+    animation-name: our-story-animation;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    /* animation-iteration-count: infinite; */
 }
 #top-right-leaf{
     position: absolute;
@@ -236,6 +247,19 @@ svg{
     bottom: 0px;
     left: 0px;
     width: 10%;
+}
+
+@keyframes our-story-animation{
+    from{
+        width: 0%;
+        left: 0px;
+        top: 0px;
+    }
+    to{
+        width: 15%;
+        left: 0px;
+        top: 25px;
+    }
 }
 /* ***************************************************** */
 /* TIMELINE */
@@ -299,19 +323,19 @@ svg{
     position: absolute;
     /* border: 2px solid darkcyan; */
     left: 5%;
-    bottom: -6px;
+    bottom: 0px;
     z-index: 1;
 }
 
 #timeline-scale-stick2{
     position: absolute;
-    top: 40px;
+    top: 54px;
     z-index: 1;
     left: 20%;
 }
 #timeline-scale-stick3{
     position: absolute;
-    bottom: -8px;
+    bottom: 0px;
     z-index: 1;
     left: 35%;
 }
@@ -321,13 +345,13 @@ img[alt="cutting-cake"]{
 }
 #timeline-scale-stick4{
     position: absolute;
-    top: 78px;
+    top: 91px;
     z-index: 1;
     left: 50%;
 }
 #timeline-scale-stick5{
     position: absolute;
-    bottom: -6px;
+    bottom: 0px;
     z-index: 1;
     right: 17%;
 }
@@ -336,7 +360,7 @@ img[alt="party"]{
 }
 #timeline-scale-stick6{
     position: absolute;
-    top: 63px;
+    top: 78px;
     z-index: 1;
     right: 6%;
 }
