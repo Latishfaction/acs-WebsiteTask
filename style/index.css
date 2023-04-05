@@ -767,6 +767,8 @@ RSVP
 #rsvp{
     position: relative;
     height: 100vh;
+
+    /* background-color: #14191F; */
     background-color: #14191F;
 }
 #rsvp-title{
