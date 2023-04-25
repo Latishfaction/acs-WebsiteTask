@@ -265,7 +265,6 @@ svg{
     left: 2%;
 }
 #timeline-scale{
-    /* border: 2px solid royalblue; */
     position: absolute;
     width: 98vw;
     height: 70vh;
@@ -306,7 +305,6 @@ svg{
 }
 #timeline-scale-stick1{
     position: absolute;
-    /* border: 2px solid darkcyan; */
     left: 5%;
     bottom: -6px;
     z-index: 1;
@@ -348,6 +346,7 @@ img[alt="party"]{
     top: 65px;
     z-index: 1;
     right: 6%;
+
 }
 
 #timeline-title-frekle1{
