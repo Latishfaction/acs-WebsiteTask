@@ -1,3 +1,4 @@
 # acs-WebsiteTask
 Web Development Task
-link : https://latishfaction.github.io/acs-WebsiteTask/html/
+
+Deployed link : https://latishfaction.github.io/acs-WebsiteTask/html/ (compatible with chrome)
